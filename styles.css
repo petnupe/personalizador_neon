@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: #222;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.controls {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.controls label {
+    display: block;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+}
+
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+}
+
+.size-intensity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.size-container,
+.intensity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    max-width: 200px;
+    margin: 0;
+}
+
+.preview {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('./fundo.jpeg');
+    /* Substitua pelo caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#neon-text {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    cursor: move;
+    white-space: pre-wrap;
+    text-align: center;
+    user-select: none;
+    word-break: normal;
+    overflow: hidden;
+    font-size: 4rem;
+    font-weight: normal;
+    color: #fff;
+    padding: 50px;
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
+    border: 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Neon</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando mais fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Sacramento&family=Dancing+Script&family=Lobster&family=Satisfy&family=Lora:wght@400;700&family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; width: 100%; justify-content: space-between; height: 10%;">
+            <h1>Simulador de Neon</h1>
+            <h6>By Peterson Pedroso</h6>
+        </div>
+    </header>
+    <div class="container">
+        <div class="controls">
+            <label for="text-input">Texto:</label>
+            <textarea id="text-input" rows="4">SEU NEON AQUI</textarea>
+
+            <label for="font-select">Fonte:</label>
+            <select id="font-select">
+                <option value="Arial" style="font-family: Arial;">Arial</option>
+                <option value="Courier New" style="font-family: Courier New;">Courier New</option>
+                <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                <option value="Great Vibes" style="font-family: 'Great Vibes';">Great Vibes</option>
+                <option value="Pacifico" style="font-family: 'Pacifico';">Pacifico</option>
+                <option value="Sacramento" style="font-family: 'Sacramento';">Sacramento</option>
+                <option value="Dancing Script" style="font-family: 'Dancing Script';">Dancing Script</option>
+                <option value="Lobster" style="font-family: 'Lobster';">Lobster</option>
+                <option value="Satisfy" style="font-family: 'Satisfy';">Satisfy</option>
+                <option value="Lora" style="font-family: 'Lora';">Lora</option>
+                <option value="Roboto" style="font-family: 'Roboto';">Roboto</option>
+                <option value="Playfair Display" style="font-family: 'Playfair Display';">Playfair Display</option>
+                <option value="Open Sans" style="font-family: 'Open Sans';">Open Sans</option>
+            </select>
+
+            <label for="color-picker">Cor:</label>
+            <input type="color" id="color-picker" value="#ff0000">
+
+            <div class="size-intensity-container">
+                <div class="size-container">
+                    <label for="size-slider">Tamanho:</label>
+                    <input type="range" id="size-slider" min="10" max="100" value="30">
+                    <span id="size-value">30px</span>
+                </div>
+                <div class="intensity-container">
+                    <label for="intensity-select">Painel:</label>
+                    <select id="intensity-select">
+                        <option value="70">Ligado</option>
+                        <option value="0">Desligado</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div
+            style="display: flex; flex-direction: column; width: 100%; justify-content: space-around; align-items: center; margin-top: 6px;">
+            <span>Arraste o texto</span>
+            <div class="preview">
+                <div id="neon-text">SEU NEON AQUI</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
